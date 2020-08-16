@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import { createStore } from "redux";
 
 import HelloWorld from "./HelloWorld";
-import reducer from './reducers';
-
-const initialState = { tech: "React " };
-const store = createStore(reducer, initialState);
+import store from "./store";
+import setTechnology from "./actions";
 
 class App extends Component {
   render() {
